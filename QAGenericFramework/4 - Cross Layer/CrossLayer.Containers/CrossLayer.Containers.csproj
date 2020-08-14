@@ -8,4 +8,8 @@
     <PackageReference Include="BoDi" Version="1.4.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\3 - Data Factory\DataFactory.RestAPI.Client\DataFactory.RestAPI.Client.csproj" />
+  </ItemGroup>
+
 </Project>
