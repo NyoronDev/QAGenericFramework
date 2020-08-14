@@ -1,4 +1,6 @@
 ﻿using BoDi;
+using DataFactory.Database.Repository;
+using DataFactory.Database.Repository.Contracts;
 using DataFactory.RestAPI.Client;
 using DataFactory.RestAPI.Client.Contracts;
 using DataFactory.RestAPI.Client.Contracts.CustomHttpClient;
@@ -17,7 +19,7 @@ namespace CrossLayer.Containers
 
         public void RegisterDatabaseRepositories(IObjectContainer objectContainer)
         {
-            throw new System.NotImplementedException();
+            objectContainer.RegisterTypeAs<ExampleRepositoryTable, IExampleRepositoryTable>();
         }
 
         public void RegisterPerformance(IObjectContainer objectContainer)

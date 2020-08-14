@@ -17,7 +17,7 @@ namespace DataFactory.RestAPI.Client.CustomHttpClient
 
         public BaseHttpClient(ITestOutputHelper testOutputHelper, HttpClientType httpClientType)
         {
-            this.testOutputHelper = testOutputHelper;
+            this.testOutputHelper = testOutputHelper ?? throw new ArgumentNullException(nameof(testOutputHelper));
 
             var handler = new HttpClientHandler { ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => true };
 

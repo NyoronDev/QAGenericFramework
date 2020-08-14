@@ -1,4 +1,5 @@
 ﻿using DataFactory.RestAPI.Client.Contracts.CustomHttpClient;
+using System;
 
 namespace DataFactory.RestAPI.Client.CustomHttpClient
 {
@@ -6,7 +7,7 @@ namespace DataFactory.RestAPI.Client.CustomHttpClient
     {
         public HttpClientFactory(IStandardHttpClient standardHttpClient)
         {
-            this.StandardHttpClient = standardHttpClient;
+            this.StandardHttpClient = standardHttpClient ?? throw new ArgumentNullException(nameof(standardHttpClient));
         }
 
         public IStandardHttpClient StandardHttpClient { get; }

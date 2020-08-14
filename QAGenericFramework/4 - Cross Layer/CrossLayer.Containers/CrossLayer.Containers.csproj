@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\3 - Data Factory\DataFactory.Database.Repository\DataFactory.Database.Repository.csproj" />
     <ProjectReference Include="..\..\3 - Data Factory\DataFactory.RestAPI.Client\DataFactory.RestAPI.Client.csproj" />
   </ItemGroup>
 

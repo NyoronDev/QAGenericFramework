@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -47,5 +47,16 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\API\" />
+    <Folder Include="Features\Database\" />
+    <Folder Include="Features\Web\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Steps\API\" />
+    <Folder Include="Steps\Database\" />
+    <Folder Include="Steps\Web\" />
   </ItemGroup>
 </Project>
