@@ -58,10 +58,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\API\" />
     <Folder Include="Features\Database\" />
     <Folder Include="Features\Web\" />
-    <Folder Include="Steps\API\" />
     <Folder Include="Steps\Database\" />
     <Folder Include="Steps\Web\" />
   </ItemGroup>

@@ -46,6 +46,15 @@ namespace UserStories.Features.Steps
         public void SetUpApiScenarios()
         {
             appContainer.RegisterAPIs(objectContainer);
+
+            // Used sometimes for API pre-steps
+            SetUpDatabaseScenarios();
+        }
+
+        [BeforeScenario]
+        [Scope(Tag = "Type:Database")]
+        public void SetUpDatabaseScenarios()
+        {
             appContainer.RegisterDatabaseRepositories(objectContainer);
         }
 
