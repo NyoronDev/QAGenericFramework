@@ -13,7 +13,7 @@ Scenario Outline: This is an API test template
         | Example request 1 | Example response 1 |
         | Example request 2 | Example response 2 |
 
-@ID:A48EA9AC-D5CD-47B4-8782-F3EB010BF5F1
+@ID:67843CA6-B145-4114-A3C8-3AD55ECC6444
 @Owner:NyoronDev
 @Type:API
 @TestCase:AAA-112

@@ -7,6 +7,6 @@ namespace DataFactory.Database.Repository.Contracts
     {
         void InsertExample(ExampleTableEntity exampleTableEntity);
 
-        ExampleTableEntity GetInsertExample(Guid id);
+        ExampleTableEntity GetExample(Guid id);
     }
 }

@@ -7,23 +7,29 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using Xunit.Abstractions;
 
 namespace DataFactory.Database.Repository
 {
     public class ExampleRepositoryTable : IExampleRepositoryTable
     {
         private readonly IConfigurationRoot configurationRoot;
+        private readonly ITestOutputHelper testOutputHelper;
+
         private string connectionString => configurationRoot.GetSection("ConnectionStrings")["KYCDataAccessPostgreSqlProvider"];
 
         internal IDbConnection Connection { get => new NpgsqlConnection(this.connectionString); }
 
-        public ExampleRepositoryTable(IConfigurationRoot configurationRoot)
+        public ExampleRepositoryTable(IConfigurationRoot configurationRoot, ITestOutputHelper testOutputHelper)
         {
             this.configurationRoot = configurationRoot ?? throw new ArgumentNullException(nameof(configurationRoot));
+            this.testOutputHelper = testOutputHelper ?? throw new ArgumentNullException(nameof(testOutputHelper));
         }
 
         public void DeleteAll()
         {
+            testOutputHelper.WriteLine("Delete data from Example repository table");
+
             using (var dbConnection = Connection)
             {
                 dbConnection.Open();
@@ -33,6 +39,8 @@ namespace DataFactory.Database.Repository
 
         public IEnumerable<ExampleTableEntity> FindAll()
         {
+            testOutputHelper.WriteLine("Find all from Example repository table");
+
             using (var dbConnection = Connection)
             {
                 dbConnection.Open();
@@ -41,8 +49,10 @@ namespace DataFactory.Database.Repository
             }
         }
 
-        public ExampleTableEntity GetInsertExample(Guid id)
+        public ExampleTableEntity GetExample(Guid id)
         {
+            testOutputHelper.WriteLine($"Get example by Id {id} from Example repository table");
+
             using (var dbConnection = Connection)
             {
                 dbConnection.Open();
@@ -54,6 +64,7 @@ namespace DataFactory.Database.Repository
 
         public void InsertExample(ExampleTableEntity exampleTableEntity)
         {
+            testOutputHelper.WriteLine("Insert example from Example repository table");
             using (var dbConnection = Connection)
             {
                 dbConnection.Open();

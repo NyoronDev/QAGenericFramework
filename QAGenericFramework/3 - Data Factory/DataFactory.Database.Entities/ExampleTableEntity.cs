@@ -4,7 +4,7 @@ namespace DataFactory.Database.Entities
 {
     public class ExampleTableEntity : BaseTableEntity
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         public string ExampleOne { get; set; }
 
