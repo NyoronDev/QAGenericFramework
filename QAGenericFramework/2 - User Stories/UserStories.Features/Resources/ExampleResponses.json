@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Example response 1",
+    "responsePropertyOne": "Example 1 response 1",
+    "responsePropertyTwo": "Example 2 response 2"
+  },
+  {
+    "name": "Example response 2",
+    "responsePropertyOne": "Example 2 response 1",
+    "responsePropertyTwo": "Example 2 response 2"
+  }
+]

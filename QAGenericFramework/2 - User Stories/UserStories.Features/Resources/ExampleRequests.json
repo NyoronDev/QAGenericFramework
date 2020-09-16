@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Example request 1",
+    "requestPropertyOne": "Request 1 example 1",
+    "requestPropertyTwo": "Request 2 example 1"
+  },
+  {
+    "name": "Example request 2",
+    "requestPropertyOne": "Request 1 example 2",
+    "requestPropertyTwo": "Request 2 example 2"
+  }
+]
