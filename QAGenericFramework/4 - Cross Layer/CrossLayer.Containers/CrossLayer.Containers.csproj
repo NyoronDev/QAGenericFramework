@@ -8,4 +8,11 @@
     <PackageReference Include="BoDi" Version="1.4.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\1 - UI Automation\WebBrowser Driver\UIAutomation.SeleniumDriver\UIAutomation.SeleniumDriver.csproj" />
+    <ProjectReference Include="..\..\3 - Data Factory\DataFactory.Database.Repository\DataFactory.Database.Repository.csproj" />
+    <ProjectReference Include="..\..\3 - Data Factory\DataFactory.Performance\DataFactory.Performance.csproj" />
+    <ProjectReference Include="..\..\3 - Data Factory\DataFactory.RestAPI.Client\DataFactory.RestAPI.Client.csproj" />
+  </ItemGroup>
+
 </Project>

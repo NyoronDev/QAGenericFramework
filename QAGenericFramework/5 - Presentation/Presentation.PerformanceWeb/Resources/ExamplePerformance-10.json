@@ -1,0 +1,1214 @@
+{
+  "title": "Example performance 10",
+  "type": 0,
+  "filename": "ExamplePerformance-10",
+  "totalActions": 10,
+  "average": 10978.54,
+  "actionsHaveAnyErrors": true,
+  "totalActionsWithErrors": 1,
+  "actionsTotalTime": 548927,
+  "executionTotalTime": 126227,
+  "startedDate": "2020-09-17T10:54:17.9513462Z",
+  "finishedDate": "2020-09-17T10:56:24.1785337Z",
+  "performanceActions": [
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 3597,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 2332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:18.0733419Z",
+      "actionEnded": "2020-09-17T10:54:21.6710545Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 3597
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 3012,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:21.6710595Z",
+      "actionEnded": "2020-09-17T10:54:24.683563Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 3012
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 2959,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 3332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:24.683571Z",
+      "actionEnded": "2020-09-17T10:54:27.6434799Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 2959
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 3026,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:27.6434928Z",
+      "actionEnded": "2020-09-17T10:54:30.6697557Z",
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 3026
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 3003,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 2332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:30.6697602Z",
+      "actionEnded": "2020-09-17T10:54:33.6733806Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 3003
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 3013,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 3332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:33.673389Z",
+      "actionEnded": "2020-09-17T10:54:36.6871638Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 3013
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 2985,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:36.6871702Z",
+      "actionEnded": "2020-09-17T10:54:39.6730697Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 2985
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 3024,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 2332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:39.6730753Z",
+      "actionEnded": "2020-09-17T10:54:42.6972453Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 3024
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 2952,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 3332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:42.69725Z",
+      "actionEnded": "2020-09-17T10:54:45.6495311Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 2952
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 3009,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 2332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 1,
+      "id": 1,
+      "actionStarted": "2020-09-17T10:54:45.6495394Z",
+      "actionEnded": "2020-09-17T10:54:48.6593041Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 3009
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 2204,
+          "hasErrors": true,
+          "error": "502 -- \u003Chtml\u003E\r\n\u003Chead\u003E\u003Ctitle\u003E502 Bad Gateway\u003C/title\u003E\u003C/head\u003E\r\n\u003Cbody bgcolor=\u0022white\u0022\u003E\r\n\u003Ccenter\u003E\u003Ch1\u003E502 Bad Gateway\u003C/h1\u003E\u003C/center\u003E\r\n\u003C/body\u003E\r\n\u003C/html\u003E\r\n"
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1332,
+          "hasErrors": true,
+          "error": "Object reference not set to an instance of an object."
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:54:48.7787761Z",
+      "actionEnded": "2020-09-17T10:54:50.9837893Z",
+
+      "subActionsHaveAnyErrors": true,
+      "subActionsTotalTime": 2204
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 4488,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 2332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:54:48.7775445Z",
+      "actionEnded": "2020-09-17T10:54:53.2658772Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 4488
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 5276,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 3332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:54:48.7782308Z",
+      "actionEnded": "2020-09-17T10:54:54.0547503Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 5276
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 6267,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 2332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:54:54.0547591Z",
+      "actionEnded": "2020-09-17T10:55:00.3222299Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 6267
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 7564,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 2332,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:54:54.0560456Z",
+      "actionEnded": "2020-09-17T10:55:01.620418Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 7564
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 7563,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:54:54.0573364Z",
+      "actionEnded": "2020-09-17T10:55:01.6204513Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 7563
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 8002,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:55:01.6218658Z",
+      "actionEnded": "2020-09-17T10:55:09.6245203Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 8002
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 8007,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:55:01.6211867Z",
+      "actionEnded": "2020-09-17T10:55:09.6281953Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 8007
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 8007,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:55:01.6204539Z",
+      "actionEnded": "2020-09-17T10:55:09.6282683Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 8007
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 2862,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 3,
+      "id": 2,
+      "actionStarted": "2020-09-17T10:55:09.6282727Z",
+      "actionEnded": "2020-09-17T10:55:12.4911702Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 2862
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 11102,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:12.5823216Z",
+      "actionEnded": "2020-09-17T10:55:23.6851828Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 11102
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 11103,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:12.5815512Z",
+      "actionEnded": "2020-09-17T10:55:23.6852366Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 11103
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 11101,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:12.5836985Z",
+      "actionEnded": "2020-09-17T10:55:23.68537Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 11101
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 11106,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:12.5808603Z",
+      "actionEnded": "2020-09-17T10:55:23.6871086Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 11106
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 11918,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:12.5830272Z",
+      "actionEnded": "2020-09-17T10:55:24.5012709Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 11918
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 8896,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:24.5012791Z",
+      "actionEnded": "2020-09-17T10:55:33.3974429Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 8896
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 9374,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:24.5026771Z",
+      "actionEnded": "2020-09-17T10:55:33.8773371Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 9374
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 10990,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:24.5039714Z",
+      "actionEnded": "2020-09-17T10:55:35.494395Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 10990
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 11111,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:24.5053329Z",
+      "actionEnded": "2020-09-17T10:55:35.6168349Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 11111
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 11903,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 5,
+      "id": 3,
+      "actionStarted": "2020-09-17T10:55:24.5063829Z",
+      "actionEnded": "2020-09-17T10:55:36.4094502Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 11903
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 10079,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:36.5026943Z",
+      "actionEnded": "2020-09-17T10:55:46.5819457Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 10079
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 14899,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:36.5019835Z",
+      "actionEnded": "2020-09-17T10:55:51.4010529Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 14899
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 14897,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:36.5033085Z",
+      "actionEnded": "2020-09-17T10:55:51.4011289Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 14897
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 15047,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:36.5039223Z",
+      "actionEnded": "2020-09-17T10:55:51.5511236Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 15047
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 16810,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:36.5045983Z",
+      "actionEnded": "2020-09-17T10:55:53.3146075Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 16810
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 16808,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:36.505794Z",
+      "actionEnded": "2020-09-17T10:55:53.3146502Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 16808
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 16812,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:36.5052335Z",
+      "actionEnded": "2020-09-17T10:55:53.3173653Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 16812
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 6256,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:53.3181958Z",
+      "actionEnded": "2020-09-17T10:55:59.5743062Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 6256
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 7285,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:53.3173698Z",
+      "actionEnded": "2020-09-17T10:56:00.6031746Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 7285
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 7397,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 7,
+      "id": 4,
+      "actionStarted": "2020-09-17T10:55:53.3189925Z",
+      "actionEnded": "2020-09-17T10:56:00.7165167Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 7397
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 21673,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.8161368Z",
+      "actionEnded": "2020-09-17T10:56:22.4893834Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 21673
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 21911,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.8154915Z",
+      "actionEnded": "2020-09-17T10:56:22.7273677Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 21911
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 21907,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.8210629Z",
+      "actionEnded": "2020-09-17T10:56:22.7289642Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 21907
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 21910,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.818411Z",
+      "actionEnded": "2020-09-17T10:56:22.7289974Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 21910
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 21909,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.8198017Z",
+      "actionEnded": "2020-09-17T10:56:22.7290269Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 21909
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 21914,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.8147342Z",
+      "actionEnded": "2020-09-17T10:56:22.7290558Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 21914
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 21911,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.8191014Z",
+      "actionEnded": "2020-09-17T10:56:22.7307456Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 21911
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 23357,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.8204699Z",
+      "actionEnded": "2020-09-17T10:56:24.1784626Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 23357
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 23360,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.8176635Z",
+      "actionEnded": "2020-09-17T10:56:24.1785017Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 23360
+    },
+    {
+      "performanceSubActions": [
+        {
+          "type": "Post request",
+          "totalTime": 23361,
+          "hasErrors": false,
+          "error": null
+        },
+        {
+          "type": "Get request",
+          "totalTime": 1324,
+          "hasErrors": false,
+          "error": null
+        }
+      ],
+      "description": "Create and obtain an example",
+      "totalRequests": 10,
+      "id": 5,
+      "actionStarted": "2020-09-17T10:56:00.816868Z",
+      "actionEnded": "2020-09-17T10:56:24.1785306Z",
+
+      "subActionsHaveAnyErrors": false,
+      "subActionsTotalTime": 23361
+    }
+  ]
+}

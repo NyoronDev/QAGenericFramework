@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\4 - Cross Layer\CrossLayer.Models\CrossLayer.Models.csproj" />
+    <ProjectReference Include="..\DataFactory.RestAPI.Client\DataFactory.RestAPI.Client.csproj" />
+  </ItemGroup>
 </Project>
