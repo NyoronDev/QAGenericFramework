@@ -31,12 +31,6 @@ namespace CrossLayer.Models
         [JsonPropertyName("actionEnded")]
         public DateTime ActionEnded { get; set; }
 
-        [JsonPropertyName("imageUrl")]
-        public string ImageUrl { get; set; }
-
-        [JsonPropertyName("imageName")]
-        public string ImageName { get; set; }
-
         [JsonPropertyName("subActionsHaveAnyErrors")]
         public bool SubActionsHaveAnyErrors
         {

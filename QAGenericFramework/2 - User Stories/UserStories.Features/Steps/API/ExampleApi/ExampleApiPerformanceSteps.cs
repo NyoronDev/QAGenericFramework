@@ -33,7 +33,7 @@ namespace UserStories.Features.Steps.API.ExampleApi
             var totalRequestsObject = totalRequestsTable.CreateSet<PerformanceTotalRequest>();
 
             performanceActionList.Title = $"Example performance {totalRequests}";
-            performanceActionList.Filename = $"ExamplePerformance{totalRequests}";
+            performanceActionList.Filename = $"ExamplePerformance-{totalRequests}";
             performanceActionList.PerformanceActionType = PerformanceActionType.ExamplePerformance;
             performanceActionList.TotalActions = totalRequests;
             performanceActionList.StartedDate = DateTime.UtcNow;
