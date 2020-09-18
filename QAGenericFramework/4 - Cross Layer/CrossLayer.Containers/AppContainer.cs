@@ -5,6 +5,12 @@ using DataFactory.RestAPI.Client;
 using DataFactory.RestAPI.Client.Contracts;
 using DataFactory.RestAPI.Client.Contracts.CustomHttpClient;
 using DataFactory.RestAPI.Client.CustomHttpClient;
+using UIAutomation.Contracts;
+using UIAutomation.Contracts.Pages;
+using UIAutomation.Contracts.Pages.Example;
+using UIAutomation.SeleniumDriver;
+using UIAutomation.SeleniumDriver.Pages;
+using UIAutomation.SeleniumDriver.Pages.Example;
 
 namespace CrossLayer.Containers
 {
@@ -29,7 +35,9 @@ namespace CrossLayer.Containers
 
         public void RegisterWebBrowserPages(IObjectContainer objectContainer)
         {
-            throw new System.NotImplementedException();
+            objectContainer.RegisterTypeAs<SetUpWebDriver, ISetUp>();
+            objectContainer.RegisterTypeAs<WebPageBase, IPageBase>();
+            objectContainer.RegisterTypeAs<ExamplePage, IExamplePage>();
         }
     }
 }

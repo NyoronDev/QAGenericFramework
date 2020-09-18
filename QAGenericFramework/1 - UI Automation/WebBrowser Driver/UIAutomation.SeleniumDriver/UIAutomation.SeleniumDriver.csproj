@@ -8,5 +8,11 @@
     <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="7.21.1" />
     <PackageReference Include="Selenium.Support" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="xunit.abstractions" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contracts\UIAutomation.Contracts\UIAutomation.Contracts.csproj" />
+    <ProjectReference Include="..\UIAutomation.Extensions\UIAutomation.Extensions.csproj" />
   </ItemGroup>
 </Project>
