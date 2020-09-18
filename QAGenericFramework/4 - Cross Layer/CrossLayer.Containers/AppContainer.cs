@@ -1,6 +1,8 @@
 ﻿using BoDi;
 using DataFactory.Database.Repository;
 using DataFactory.Database.Repository.Contracts;
+using DataFactory.Performance;
+using DataFactory.Performance.ReportGeneration;
 using DataFactory.RestAPI.Client;
 using DataFactory.RestAPI.Client.Contracts;
 using DataFactory.RestAPI.Client.Contracts.CustomHttpClient;
@@ -30,7 +32,8 @@ namespace CrossLayer.Containers
 
         public void RegisterPerformance(IObjectContainer objectContainer)
         {
-            throw new System.NotImplementedException();
+            objectContainer.RegisterTypeAs<ReportDataGeneration, IReportDataGeneration>();
+            objectContainer.RegisterTypeAs<PerformanceExampleRestApi, IPerformanceExampleRestApi>();
         }
 
         public void RegisterWebBrowserPages(IObjectContainer objectContainer)
