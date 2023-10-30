@@ -1,10 +1,10 @@
 # QA Generic Framework
-Generic framework architecture for UI, Backend (database, api/rest, performance) and End to end testing in order to start a new automation testing project. .Net Core based
+Generic framework architecture for UI, Backend (database, api/rest, performance) and End to end testing in order to start a new automation testing project. .Net based
 
 ## Requirements
 - Visual Studio
 - Visual Studio Extension -- Specflow
-- .Net Core 3.1
+- .Net 7
 
 ## Configuration
 - You can use appsettings.json environment files (or add what you need it) to configure different variables on the project.
