@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\4 - Cross Layer\CrossLayer.Models\CrossLayer.Models.csproj" />
+    <ProjectReference Include="..\..\CrossLayer.Configuration\CrossLayer.Configuration.csproj" />
     <ProjectReference Include="..\DataFactory.RestAPI.Client\DataFactory.RestAPI.Client.csproj" />
   </ItemGroup>
 </Project>

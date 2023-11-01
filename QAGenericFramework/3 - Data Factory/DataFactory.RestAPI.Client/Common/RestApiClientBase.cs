@@ -1,6 +1,5 @@
 ﻿using DataFactory.RestAPI.Client.Contracts.CustomHttpClient;
 using DataFactory.RestAPI.Entities.Common;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +11,11 @@ namespace DataFactory.RestAPI.Client.Common
 {
     public class RestApiClientBase
     {
-        protected readonly IConfigurationRoot ConfigurationRoot;
         protected readonly IHttpClientFactory HttpClientFactory;
 
-        public RestApiClientBase(IConfigurationRoot configurationRoot, IHttpClientFactory httpClientFactory)
+        public RestApiClientBase(IHttpClientFactory httpClientFactory)
         {
-            this.ConfigurationRoot = configurationRoot ?? throw new ArgumentNullException(nameof(configurationRoot));
-            this.HttpClientFactory = httpClientFactory ?? throw new ArgumentNullException(nameof(httpClientFactory));
+            HttpClientFactory = httpClientFactory ?? throw new ArgumentNullException(nameof(httpClientFactory));
         }
 
         protected async Task<ApiGenericResponse<T>> CreateApiGenericResponse<T>(HttpResponseMessage response) where T : class

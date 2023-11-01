@@ -1,10 +1,10 @@
-﻿using DataFactory.RestAPI.Client.Common;
+﻿using CrossLayer.Configuration;
+using DataFactory.RestAPI.Client.Common;
 using DataFactory.RestAPI.Client.Contracts;
 using DataFactory.RestAPI.Client.Contracts.CustomHttpClient;
 using DataFactory.RestAPI.Entities.Common;
 using DataFactory.RestAPI.Entities.ExampleRequest;
 using DataFactory.RestAPI.Entities.ExampleResponse;
-using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
 
 namespace DataFactory.RestAPI.Client
@@ -12,12 +12,12 @@ namespace DataFactory.RestAPI.Client
     public class ExampleRestApiClient : RestApiClientBase, IExampleRestApiClient
     {
         private readonly string resultAttribute = "/result";
+        private readonly string exampleService;
 
-        private string exampleService => ConfigurationRoot.GetSection("AppConfiguration")["ExampleService"];
-
-        public ExampleRestApiClient(IConfigurationRoot configurationRoot, IHttpClientFactory httpClientFactory)
-            : base(configurationRoot, httpClientFactory)
+        public ExampleRestApiClient(IHttpClientFactory httpClientFactory, AppSettings appSettings)
+            : base(httpClientFactory)
         {
+            exampleService = appSettings.AppConfiguration.ExampleService;
         }
 
         /// <summary>

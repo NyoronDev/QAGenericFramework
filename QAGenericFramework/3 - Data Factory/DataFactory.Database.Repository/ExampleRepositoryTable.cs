@@ -1,7 +1,7 @@
-﻿using Dapper;
+﻿using CrossLayer.Configuration;
+using Dapper;
 using DataFactory.Database.Entities;
 using DataFactory.Database.Repository.Contracts;
-using Microsoft.Extensions.Configuration;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -13,17 +13,17 @@ namespace DataFactory.Database.Repository
 {
     public class ExampleRepositoryTable : IExampleRepositoryTable
     {
-        private readonly IConfigurationRoot configurationRoot;
         private readonly ITestOutputHelper testOutputHelper;
 
-        private string connectionString => configurationRoot.GetSection("ConnectionStrings")["KYCDataAccessPostgreSqlProvider"];
+        private readonly string connectionString;
 
         internal IDbConnection Connection { get => new NpgsqlConnection(this.connectionString); }
 
-        public ExampleRepositoryTable(IConfigurationRoot configurationRoot, ITestOutputHelper testOutputHelper)
+        public ExampleRepositoryTable(ITestOutputHelper testOutputHelper, AppSettings appSettings)
         {
-            this.configurationRoot = configurationRoot ?? throw new ArgumentNullException(nameof(configurationRoot));
             this.testOutputHelper = testOutputHelper ?? throw new ArgumentNullException(nameof(testOutputHelper));
+
+            connectionString = appSettings.ConnectionStrings.DataAccessPostgreSqlProvider;
         }
 
         public void DeleteAll()

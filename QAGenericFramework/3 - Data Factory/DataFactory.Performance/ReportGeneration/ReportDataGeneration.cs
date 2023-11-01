@@ -1,6 +1,5 @@
-﻿using CrossLayer.Models;
-using Microsoft.Extensions.Configuration;
-using System;
+﻿using CrossLayer.Configuration;
+using CrossLayer.Models;
 using System.IO;
 using System.Text.Json;
 
@@ -8,17 +7,15 @@ namespace DataFactory.Performance.ReportGeneration
 {
     public class ReportDataGeneration : IReportDataGeneration
     {
-        private readonly IConfigurationRoot configurationRoot;
-
         // Paths
-        private string testOutputFolder => configurationRoot.GetSection("AppConfiguration")["TestOutputFolder"];
+        private readonly string testPerformancePath;
 
-        private string testPerformanceFolder => configurationRoot.GetSection("AppConfiguration")["PerformanceFileFolder"];
-        private string testPerformancePath => $"{testOutputFolder}{Path.DirectorySeparatorChar}{this.testPerformanceFolder}";
-
-        public ReportDataGeneration(IConfigurationRoot configurationRoot)
+        public ReportDataGeneration(AppSettings appSettings)
         {
-            this.configurationRoot = configurationRoot ?? throw new ArgumentNullException(nameof(configurationRoot));
+            var testOutputFolder = appSettings.AppConfiguration.TestOutputFolder;
+            var testPerformanceFolder = appSettings.AppConfiguration.PerformanceFileFolder;
+
+            testPerformancePath = $"{testOutputFolder}{Path.DirectorySeparatorChar}{testPerformanceFolder}";
         }
 
         public void GeneratePerformanceJsonReport(PerformanceActionList performanceActionList)

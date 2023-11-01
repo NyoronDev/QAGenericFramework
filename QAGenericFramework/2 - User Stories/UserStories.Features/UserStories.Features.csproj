@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -12,7 +12,6 @@
     <None Remove="appsettings.Acceptance.json" />
     <None Remove="appsettings.Acceptance.json~RF599d76a.TMP" />
     <None Remove="appsettings.Development.json" />
-    <None Remove="appsettings.json" />
     <None Remove="appsettings.Local.json" />
     <None Remove="Resources\ExampleRequests.json" />
     <None Remove="Resources\ExampleResponses.json" />
@@ -23,9 +22,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="appsettings.Development.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="appsettings.Local.json">
@@ -63,5 +59,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\3 - Data Factory\DataFactory.RestAPI.Entities\DataFactory.RestAPI.Entities.csproj" />
     <ProjectReference Include="..\..\4 - Cross Layer\CrossLayer.Containers\CrossLayer.Containers.csproj" />
+    <ProjectReference Include="..\..\CrossLayer.Configuration\CrossLayer.Configuration.csproj" />
   </ItemGroup>
 </Project>

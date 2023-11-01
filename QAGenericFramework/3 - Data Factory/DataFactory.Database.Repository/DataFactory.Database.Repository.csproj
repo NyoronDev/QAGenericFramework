@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\CrossLayer.Configuration\CrossLayer.Configuration.csproj" />
     <ProjectReference Include="..\DataFactory.Database.Entities\DataFactory.Database.Entities.csproj" />
   </ItemGroup>
 </Project>
