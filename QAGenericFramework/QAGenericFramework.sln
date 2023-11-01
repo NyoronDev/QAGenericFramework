@@ -41,7 +41,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrossLayer.Models", "4 - Cr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation.PerformanceWeb", "5 - Presentation\Presentation.PerformanceWeb\Presentation.PerformanceWeb.csproj", "{097D0C1C-6B11-42AF-87FC-76932762C71A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossLayer.Configuration", "CrossLayer.Configuration\CrossLayer.Configuration.csproj", "{7917CDE3-5001-4D5D-B748-E97E257950B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossLayer.Configuration", "4 - Cross Layer\CrossLayer.Configuration\CrossLayer.Configuration.csproj", "{7917CDE3-5001-4D5D-B748-E97E257950B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

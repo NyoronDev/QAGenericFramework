@@ -59,6 +59,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\3 - Data Factory\DataFactory.RestAPI.Entities\DataFactory.RestAPI.Entities.csproj" />
     <ProjectReference Include="..\..\4 - Cross Layer\CrossLayer.Containers\CrossLayer.Containers.csproj" />
-    <ProjectReference Include="..\..\CrossLayer.Configuration\CrossLayer.Configuration.csproj" />
+    <ProjectReference Include="..\..\4 - Cross Layer\CrossLayer.Configuration\CrossLayer.Configuration.csproj" />
   </ItemGroup>
 </Project>
