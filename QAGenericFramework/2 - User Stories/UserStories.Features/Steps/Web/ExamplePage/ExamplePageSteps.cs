@@ -2,20 +2,20 @@
 using FluentAssertions;
 using System;
 using TechTalk.SpecFlow;
-using UIAutomation.Contracts;
-using UIAutomation.Contracts.Pages.Example;
+using UIAutomation.WebDriver.Contracts;
+using UIAutomation.WebDriver.Contracts.Pages.Example;
 
 namespace UserStories.Features.Steps.Web.ExamplePage
 {
     [Binding]
     public class ExamplePageSteps : StepsBase
     {
-        private readonly ISetUp setUpDriver;
+        private readonly ISetUpWebDriver setUpDriver;
         private readonly IExamplePage examplePage;
 
         private readonly string examplePageUrl;
 
-        public ExamplePageSteps(IExamplePage examplePage, ISetUp setUpDriver, AppSettings appSettings)
+        public ExamplePageSteps(IExamplePage examplePage, ISetUpWebDriver setUpDriver, AppSettings appSettings)
         {
             this.setUpDriver = setUpDriver ?? throw new ArgumentNullException(nameof(setUpDriver));
             this.examplePage = examplePage ?? throw new ArgumentNullException(nameof(examplePage));

@@ -3,12 +3,12 @@ using OpenQA.Selenium.Chrome;
 using System;
 using System.IO;
 using System.Reflection;
-using UIAutomation.Contracts;
+using UIAutomation.WebDriver.Contracts;
 using Xunit.Abstractions;
 
-namespace UIAutomation.SeleniumDriver
+namespace UIAutomation.WebDriver
 {
-    public class SetUpWebDriver : ISetUp
+    public class SetUpWebDriver : ISetUpWebDriver
     {
         private readonly ITestOutputHelper testOutputHelper;
 

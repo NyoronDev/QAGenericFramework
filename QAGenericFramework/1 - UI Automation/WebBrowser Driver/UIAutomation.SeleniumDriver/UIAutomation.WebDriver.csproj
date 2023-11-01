@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Contracts\UIAutomation.Contracts\UIAutomation.Contracts.csproj" />
     <ProjectReference Include="..\UIAutomation.Extensions\UIAutomation.Extensions.csproj" />
   </ItemGroup>
 </Project>

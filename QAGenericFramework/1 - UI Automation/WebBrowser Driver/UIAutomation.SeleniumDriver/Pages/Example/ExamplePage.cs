@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using System.Collections.Generic;
 using System.Linq;
-using UIAutomation.Contracts;
-using UIAutomation.Contracts.Pages.Example;
+using UIAutomation.WebDriver.Contracts;
+using UIAutomation.WebDriver.Contracts.Pages.Example;
 using Xunit.Abstractions;
 
-namespace UIAutomation.SeleniumDriver.Pages.Example
+namespace UIAutomation.WebDriver.Pages.Example
 {
     public class ExamplePage : WebPageBase, IExamplePage
     {
@@ -17,7 +17,7 @@ namespace UIAutomation.SeleniumDriver.Pages.Example
 
         #endregion .: Web Elements :.
 
-        public ExamplePage(ISetUp setUp, ITestOutputHelper testOutputHelper)
+        public ExamplePage(ISetUpWebDriver setUp, ITestOutputHelper testOutputHelper)
             : base(setUp, testOutputHelper)
         {
         }

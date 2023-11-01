@@ -1,15 +1,15 @@
 ﻿using System;
 using TechTalk.SpecFlow;
-using UIAutomation.Contracts;
+using UIAutomation.WebDriver.Contracts;
 
 namespace UserStories.Features.Steps
 {
     [Binding]
     public class AfterSteps
     {
-        private readonly ISetUp setUpDriver;
+        private readonly ISetUpWebDriver setUpDriver;
 
-        public AfterSteps(ISetUp setUpDriver)
+        public AfterSteps(ISetUpWebDriver setUpDriver)
         {
             this.setUpDriver = setUpDriver ?? throw new ArgumentNullException(nameof(setUpDriver));
         }

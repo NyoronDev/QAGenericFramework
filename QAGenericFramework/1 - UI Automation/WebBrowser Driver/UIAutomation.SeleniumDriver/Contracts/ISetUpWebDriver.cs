@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
 
-namespace UIAutomation.Contracts
+namespace UIAutomation.WebDriver.Contracts
 {
-    public interface ISetUp
+    public interface ISetUpWebDriver
     {
         IWebDriver WebDriver { get; }
 
