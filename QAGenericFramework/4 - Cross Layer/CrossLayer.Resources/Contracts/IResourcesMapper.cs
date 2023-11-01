@@ -1,7 +1,7 @@
 ﻿using DataFactory.RestAPI.Entities.ExampleRequest;
 using DataFactory.RestAPI.Entities.ExampleResponse;
 
-namespace UserStories.Features.Mapper
+namespace CrossLayer.Resources.Contracts
 {
     public interface IResourcesMapper
     {

@@ -6,7 +6,6 @@ using DataFactory.Database.Entities.Mappers;
 using Microsoft.Extensions.Configuration;
 using System.Reflection;
 using TechTalk.SpecFlow;
-using UserStories.Features.Mapper;
 
 namespace UserStories.Features.Steps
 {
@@ -19,9 +18,6 @@ namespace UserStories.Features.Steps
         {
             this.objectContainer = objectContainer;
 
-            // Inject resources
-            this.objectContainer.RegisterTypeAs<ResourcesMapper, IResourcesMapper>();
-
             var assemblyConfigurationAttribute = typeof(BeforeSteps).Assembly.GetCustomAttribute<AssemblyConfigurationAttribute>();
             var buildConfigurationName = assemblyConfigurationAttribute?.Configuration;
 
@@ -33,6 +29,7 @@ namespace UserStories.Features.Steps
 
             var appSettings = AppSettingsBuilder.GetConfiguration(configurationRoot);
 
+            this.objectContainer.RegisterMapper();
             this.objectContainer.RegisterInstanceAs(appSettings);
         }
 
