@@ -16,27 +16,27 @@ using UIAutomation.SeleniumDriver.Pages.Example;
 
 namespace CrossLayer.Containers
 {
-    public class AppContainer : IAppContainer
+    public static class AppContainerExtensions
     {
-        public void RegisterAPIs(IObjectContainer objectContainer)
+        public static void RegisterAPIs(this IObjectContainer objectContainer)
         {
             objectContainer.RegisterTypeAs<StandardHttpClient, IStandardHttpClient>();
             objectContainer.RegisterTypeAs<HttpClientFactory, IHttpClientFactory>();
             objectContainer.RegisterTypeAs<ExampleRestApiClient, IExampleRestApiClient>();
         }
 
-        public void RegisterDatabaseRepositories(IObjectContainer objectContainer)
+        public static void RegisterDatabaseRepositories(this IObjectContainer objectContainer)
         {
             objectContainer.RegisterTypeAs<ExampleRepositoryTable, IExampleRepositoryTable>();
         }
 
-        public void RegisterPerformance(IObjectContainer objectContainer)
+        public static void RegisterPerformance(this IObjectContainer objectContainer)
         {
             objectContainer.RegisterTypeAs<ReportDataGeneration, IReportDataGeneration>();
             objectContainer.RegisterTypeAs<PerformanceExampleRestApi, IPerformanceExampleRestApi>();
         }
 
-        public void RegisterWebBrowserPages(IObjectContainer objectContainer)
+        public static void RegisterWebBrowserPages(this IObjectContainer objectContainer)
         {
             objectContainer.RegisterTypeAs<SetUpWebDriver, ISetUp>();
             objectContainer.RegisterTypeAs<WebPageBase, IPageBase>();

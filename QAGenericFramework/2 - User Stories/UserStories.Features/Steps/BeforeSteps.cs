@@ -1,8 +1,10 @@
 ﻿using BoDi;
+using CrossLayer.Configuration;
 using CrossLayer.Containers;
 using Dapper.FluentMap;
 using DataFactory.Database.Entities.Mappers;
 using Microsoft.Extensions.Configuration;
+using System.Reflection;
 using TechTalk.SpecFlow;
 using UserStories.Features.Mapper;
 
@@ -12,40 +14,33 @@ namespace UserStories.Features.Steps
     public class BeforeSteps
     {
         private readonly IObjectContainer objectContainer;
-        private readonly IAppContainer appContainer;
 
         public BeforeSteps(IObjectContainer objectContainer)
         {
             this.objectContainer = objectContainer;
 
-            // Inject solution container
-            this.objectContainer.RegisterTypeAs<AppContainer, IAppContainer>();
-            appContainer = this.objectContainer.Resolve<IAppContainer>();
-
             // Inject resources
             this.objectContainer.RegisterTypeAs<ResourcesMapper, IResourcesMapper>();
 
+            var assemblyConfigurationAttribute = typeof(BeforeSteps).Assembly.GetCustomAttribute<AssemblyConfigurationAttribute>();
+            var buildConfigurationName = assemblyConfigurationAttribute?.Configuration;
+
             // Inject appsettings configuration
             var configurationRoot = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{buildConfigurationName}.json")
                 .AddEnvironmentVariables()
                 .Build();
 
-            var environment = configurationRoot.GetSection("AppConfiguration")["Environment"];
+            var appSettings = AppSettingsBuilder.GetConfiguration(configurationRoot);
 
-            var configurationEnvironment = new ConfigurationBuilder()
-                .AddJsonFile($"appsettings.{environment}.json", optional: true, reloadOnChange: true)
-                .AddEnvironmentVariables()
-                .Build();
-
-            this.objectContainer.RegisterInstanceAs(configurationEnvironment);
+            this.objectContainer.RegisterInstanceAs(appSettings);
         }
 
         [BeforeScenario]
         [Scope(Tag = "Type:API")]
         public void SetUpApiScenarios()
         {
-            appContainer.RegisterAPIs(objectContainer);
+            objectContainer.RegisterAPIs();
 
             // Used sometimes for API pre-steps
             SetUpDatabaseScenarios();
@@ -55,7 +50,7 @@ namespace UserStories.Features.Steps
         [Scope(Tag = "Type:Database")]
         public void SetUpDatabaseScenarios()
         {
-            appContainer.RegisterDatabaseRepositories(objectContainer);
+            objectContainer.RegisterDatabaseRepositories();
         }
 
         [BeforeScenario]
@@ -63,15 +58,15 @@ namespace UserStories.Features.Steps
         public void SetUpWebUI()
         {
             SetUpApiScenarios();
-            appContainer.RegisterWebBrowserPages(objectContainer);
+            objectContainer.RegisterWebBrowserPages();
         }
 
         [BeforeScenario]
         [Scope(Tag = "Type:Performance")]
         public void SetUpPerformanceScenarios()
         {
-            appContainer.RegisterAPIs(objectContainer);
-            appContainer.RegisterPerformance(objectContainer);
+            objectContainer.RegisterAPIs();
+            objectContainer.RegisterPerformance();
 
             FluentMapper.Initialize(config =>
             {

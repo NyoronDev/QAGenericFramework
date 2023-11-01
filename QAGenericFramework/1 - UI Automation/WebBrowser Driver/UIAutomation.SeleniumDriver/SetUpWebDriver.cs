@@ -50,7 +50,7 @@ namespace UIAutomation.SeleniumDriver
 
         private IWebDriver CreateWebDriver()
         {
-            // Could be used to instanciate more types of web driver, use IConfigurationRoot and set up the configuration propertly
+            // Could be used to instanciate more types of web driver, use AppSettings and set up the configuration propertly
             return SetUpChromeWebDriver();
         }
 

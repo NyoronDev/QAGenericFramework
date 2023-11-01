@@ -1,5 +1,5 @@
-﻿using FluentAssertions;
-using Microsoft.Extensions.Configuration;
+﻿using CrossLayer.Configuration;
+using FluentAssertions;
 using System;
 using TechTalk.SpecFlow;
 using UIAutomation.Contracts;
@@ -12,15 +12,15 @@ namespace UserStories.Features.Steps.Web.ExamplePage
     {
         private readonly ISetUp setUpDriver;
         private readonly IExamplePage examplePage;
-        private readonly IConfigurationRoot configurationRoot;
 
-        private string examplePageUrl => configurationRoot.GetSection("AppConfiguration")["ExampleWebPage"];
+        private readonly string examplePageUrl;
 
-        public ExamplePageSteps(IExamplePage examplePage, ISetUp setUpDriver, IConfigurationRoot configurationRoot)
+        public ExamplePageSteps(IExamplePage examplePage, ISetUp setUpDriver, AppSettings appSettings)
         {
             this.setUpDriver = setUpDriver ?? throw new ArgumentNullException(nameof(setUpDriver));
             this.examplePage = examplePage ?? throw new ArgumentNullException(nameof(examplePage));
-            this.configurationRoot = configurationRoot ?? throw new ArgumentNullException(nameof(configurationRoot));
+
+            examplePageUrl = appSettings.AppConfiguration.ExampleWebPage;
         }
 
         [Given(@"The user goes to example page")]
