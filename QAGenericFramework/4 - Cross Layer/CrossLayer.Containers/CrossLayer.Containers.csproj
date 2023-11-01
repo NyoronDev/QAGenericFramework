@@ -14,6 +14,7 @@
     <ProjectReference Include="..\..\3 - Data Factory\DataFactory.Database.Repository\DataFactory.Database.Repository.csproj" />
     <ProjectReference Include="..\..\3 - Data Factory\DataFactory.Performance\DataFactory.Performance.csproj" />
     <ProjectReference Include="..\..\3 - Data Factory\DataFactory.RestAPI.Client\DataFactory.RestAPI.Client.csproj" />
+    <ProjectReference Include="..\CrossLayer.Resources\CrossLayer.Resources.csproj" />
   </ItemGroup>
 
 </Project>

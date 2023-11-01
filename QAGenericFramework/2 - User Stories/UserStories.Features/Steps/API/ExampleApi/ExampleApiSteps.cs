@@ -1,4 +1,5 @@
-﻿using DataFactory.RestAPI.Client.Contracts;
+﻿using CrossLayer.Resources.Contracts;
+using DataFactory.RestAPI.Client.Contracts;
 using DataFactory.RestAPI.Entities.Common;
 using DataFactory.RestAPI.Entities.ExampleRequest;
 using DataFactory.RestAPI.Entities.ExampleResponse;
@@ -7,7 +8,6 @@ using System;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
-using UserStories.Features.Mapper;
 
 namespace UserStories.Features.Steps.API.ExampleApi
 {

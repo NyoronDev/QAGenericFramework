@@ -1,13 +1,10 @@
-﻿using DataFactory.RestAPI.Entities.ExampleRequest;
+﻿using CrossLayer.Resources.Contracts;
+using DataFactory.RestAPI.Entities.ExampleRequest;
 using DataFactory.RestAPI.Entities.ExampleResponse;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Text.Json;
 using Xunit.Abstractions;
 
-namespace UserStories.Features.Mapper
+namespace CrossLayer.Resources
 {
     public class ResourcesMapper : IResourcesMapper
     {

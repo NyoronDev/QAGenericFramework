@@ -13,8 +13,6 @@
     <None Remove="appsettings.Acceptance.json~RF599d76a.TMP" />
     <None Remove="appsettings.Development.json" />
     <None Remove="appsettings.Local.json" />
-    <None Remove="Resources\ExampleRequests.json" />
-    <None Remove="Resources\ExampleResponses.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,12 +23,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="appsettings.Local.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\ExampleRequests.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\ExampleResponses.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

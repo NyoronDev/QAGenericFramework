@@ -1,4 +1,6 @@
 ﻿using BoDi;
+using CrossLayer.Resources;
+using CrossLayer.Resources.Contracts;
 using DataFactory.Database.Repository;
 using DataFactory.Database.Repository.Contracts;
 using DataFactory.Performance;
@@ -18,6 +20,11 @@ namespace CrossLayer.Containers
 {
     public static class AppContainerExtensions
     {
+        public static void RegisterMapper(this IObjectContainer objectContainer)
+        {
+            objectContainer.RegisterTypeAs<ResourcesMapper, IResourcesMapper>();
+        }
+
         public static void RegisterAPIs(this IObjectContainer objectContainer)
         {
             objectContainer.RegisterTypeAs<StandardHttpClient, IStandardHttpClient>();
