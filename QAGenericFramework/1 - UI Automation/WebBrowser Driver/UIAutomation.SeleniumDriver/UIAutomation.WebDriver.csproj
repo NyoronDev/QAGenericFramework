@@ -14,6 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\4 - Cross Layer\CrossLayer.Configuration\CrossLayer.Configuration.csproj" />
+    <ProjectReference Include="..\..\..\4 - Cross Layer\CrossLayer.Models\CrossLayer.Models.csproj" />
     <ProjectReference Include="..\UIAutomation.Extensions\UIAutomation.Extensions.csproj" />
   </ItemGroup>
 </Project>

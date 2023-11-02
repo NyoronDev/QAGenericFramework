@@ -8,8 +8,10 @@ namespace CrossLayer.Configuration
         {
             var configuration = new AppSettings
             {
+                ExecutionType = configurationRoot.GetSection(nameof(ExecutionType)).Get<ExecutionType>(),
                 AppConfiguration = configurationRoot.GetSection(nameof(AppConfiguration)).Get<AppConfiguration>(),
-                ConnectionStrings = configurationRoot.GetSection(nameof(ConnectionStrings)).Get<ConnectionStrings>()
+                ConnectionStrings = configurationRoot.GetSection(nameof(ConnectionStrings)).Get<ConnectionStrings>(),
+                SauceLabs = configurationRoot.GetSection(nameof(SauceLabs)).Get<SauceLabs>()
             };
 
             return configuration;

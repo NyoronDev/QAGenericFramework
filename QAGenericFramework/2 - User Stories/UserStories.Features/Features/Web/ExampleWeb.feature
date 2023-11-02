@@ -5,7 +5,16 @@
 @Owner:NyoronDev
 @Type:WebUI
 @TestCase:CCC-111
-Scenario: The user clicks example button and obtain result from example card
-    Given The user goes to example page
+Scenario Outline: The user clicks example button and obtain result from example card
+    Given The web scenario is executed with the following properties
+        | PlatformExecution   | Device   |
+        | <platformExecution> | <device> |
+    And The user goes to example page
     When The user clicks the example button
     Then The user can check the text 'This is a card' from example card 'exampleCard'
+
+    Examples: 
+        | platformExecution | device     |
+        | Windows           | Windows 10 |
+        | Android           | Pixel 8    |
+        | iOS               | Iphone 15  |

@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using CrossLayer.Models.UIScenario;
+using OpenQA.Selenium;
 
 namespace UIAutomation.WebDriver.Contracts
 {
@@ -9,5 +10,7 @@ namespace UIAutomation.WebDriver.Contracts
         void CloseWebDriver();
 
         void NavigateToUrl(string url);
+
+        void CreateWebDriver(ScenarioProperties scenarioProperties);
     }
 }
