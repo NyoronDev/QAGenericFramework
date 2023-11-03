@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\1 - UI Automation\Native Driver\UIAutomation.NativeDriver\UIAutomation.NativeDriver.csproj" />
     <ProjectReference Include="..\..\1 - UI Automation\WebBrowser Driver\UIAutomation.SeleniumDriver\UIAutomation.WebDriver.csproj" />
     <ProjectReference Include="..\..\3 - Data Factory\DataFactory.Database.Repository\DataFactory.Database.Repository.csproj" />
     <ProjectReference Include="..\..\3 - Data Factory\DataFactory.Performance\DataFactory.Performance.csproj" />

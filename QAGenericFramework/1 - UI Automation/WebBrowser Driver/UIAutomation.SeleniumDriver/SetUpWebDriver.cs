@@ -43,7 +43,7 @@ namespace UIAutomation.WebDriver
 
         public void CloseWebDriver()
         {
-            testOutputHelper.WriteLine($"Removing web driver");
+            testOutputHelper.WriteLine("Removing web driver");
 
             webDriver?.Quit();
             webDriver?.Dispose();

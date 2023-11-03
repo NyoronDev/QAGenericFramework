@@ -9,6 +9,8 @@ using DataFactory.RestAPI.Client;
 using DataFactory.RestAPI.Client.Contracts;
 using DataFactory.RestAPI.Client.Contracts.CustomHttpClient;
 using DataFactory.RestAPI.Client.CustomHttpClient;
+using UIAutomation.NativeDriver;
+using UIAutomation.NativeDriver.Contracts;
 using UIAutomation.WebDriver;
 using UIAutomation.WebDriver.Contracts;
 using UIAutomation.WebDriver.Contracts.Pages;
@@ -48,6 +50,11 @@ namespace CrossLayer.Containers
             objectContainer.RegisterTypeAs<SetUpWebDriver, ISetUpWebDriver>();
             objectContainer.RegisterTypeAs<WebPageBase, IPageBase>();
             objectContainer.RegisterTypeAs<ExamplePage, IExamplePage>();
+        }
+
+        public static void RegisterNativePages(this IObjectContainer objectContainer)
+        {
+            objectContainer.RegisterTypeAs<SetUpNativeDriver, ISetUpNativeDriver>();
         }
     }
 }

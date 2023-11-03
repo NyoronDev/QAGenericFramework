@@ -53,10 +53,12 @@ namespace UserStories.Features.Steps
 
         [BeforeScenario]
         [Scope(Tag = "Type:WebUI")]
+        [Scope(Tag = "Type:NativeUI")]
         public void SetUpWebUI()
         {
             SetUpApiScenarios();
             objectContainer.RegisterWebBrowserPages();
+            objectContainer.RegisterNativePages();
         }
 
         [BeforeScenario]
