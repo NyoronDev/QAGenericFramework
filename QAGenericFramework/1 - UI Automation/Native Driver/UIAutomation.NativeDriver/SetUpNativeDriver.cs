@@ -218,7 +218,7 @@ namespace UIAutomation.NativeDriver
                 accessKey = Environment.GetEnvironmentVariable("SAUCE_ACCESS_KEY", EnvironmentVariableTarget.User);
             }
 
-            var sauceOptions = new Dictionary<string, object> { ["username"] = user, ["accessKey"] = accessKey, ["build"] = "buildId", ["name"] = "testName" };
+            var sauceOptions = new Dictionary<string, object> { ["username"] = user, ["accessKey"] = accessKey, ["build"] = scenarioProperties.Build, ["name"] = scenarioProperties.TestName };
             return sauceOptions;
         }
     }
