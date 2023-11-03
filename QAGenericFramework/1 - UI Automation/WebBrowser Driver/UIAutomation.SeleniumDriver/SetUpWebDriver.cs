@@ -70,6 +70,14 @@ namespace UIAutomation.WebDriver
             }
         }
 
+        public void SendTestResultToCloud(bool isTestPassed)
+        {
+            if (appSettings.ExecutionType == ExecutionType.Cloud)
+            {
+                ((IJavaScriptExecutor)webDriver).ExecuteScript("sauce:job-result=" + (isTestPassed ? "passed" : "failed"));
+            }
+        }
+
         private void CreateOnPremiseWebDriver(ScenarioProperties scenarioProperties)
         {
             switch (scenarioProperties.PlatformExecution)

@@ -12,5 +12,7 @@ namespace UIAutomation.WebDriver.Contracts
         void NavigateToUrl(string url);
 
         void CreateWebDriver(ScenarioProperties scenarioProperties);
+
+        void SendTestResultToCloud(bool isTestPassed);
     }
 }

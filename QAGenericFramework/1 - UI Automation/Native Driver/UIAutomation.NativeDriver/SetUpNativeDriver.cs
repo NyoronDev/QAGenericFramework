@@ -1,5 +1,6 @@
 ﻿using CrossLayer.Configuration;
 using CrossLayer.Models.UIScenario;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Appium.iOS;
@@ -92,6 +93,21 @@ namespace UIAutomation.NativeDriver
                 case ExecutionType.Cloud:
                     CreateDrive(scenarioProperties, true);
                     break;
+            }
+        }
+
+        public void SendTestResultToCloud(bool isTestPassed)
+        {
+            if (appSettings.ExecutionType == ExecutionType.Cloud)
+            {
+                if (androidDriver is not null)
+                {
+                    ((IJavaScriptExecutor)androidDriver).ExecuteScript("sauce:job-result=" + (isTestPassed ? "passed" : "failed"));
+                }
+                else if (iOSDriver is not null)
+                {
+                    ((IJavaScriptExecutor)iOSDriver).ExecuteScript("sauce:job-result=" + (isTestPassed ? "passed" : "failed"));
+                }
             }
         }
 

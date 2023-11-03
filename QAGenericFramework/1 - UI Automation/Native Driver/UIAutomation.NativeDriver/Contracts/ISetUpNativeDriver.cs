@@ -17,5 +17,7 @@ namespace UIAutomation.NativeDriver.Contracts
         void CloseIOSDriver();
 
         void CreateNativeDriver(ScenarioProperties scenarioProperties);
+
+        void SendTestResultToCloud(bool isTestPassed);
     }
 }
