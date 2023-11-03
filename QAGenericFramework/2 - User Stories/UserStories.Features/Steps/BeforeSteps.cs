@@ -23,7 +23,8 @@ namespace UserStories.Features.Steps
 
             // Inject appsettings configuration
             var configurationRoot = new ConfigurationBuilder()
-                .AddJsonFile($"appsettings.{buildConfigurationName}.json")
+                .AddJsonFile($"appsettings.json", false, true)
+                .AddJsonFile($"appsettings.{buildConfigurationName}.json", false, true)
                 .AddEnvironmentVariables()
                 .Build();
 
@@ -52,10 +53,12 @@ namespace UserStories.Features.Steps
 
         [BeforeScenario]
         [Scope(Tag = "Type:WebUI")]
+        [Scope(Tag = "Type:NativeUI")]
         public void SetUpWebUI()
         {
             SetUpApiScenarios();
             objectContainer.RegisterWebBrowserPages();
+            objectContainer.RegisterNativePages();
         }
 
         [BeforeScenario]

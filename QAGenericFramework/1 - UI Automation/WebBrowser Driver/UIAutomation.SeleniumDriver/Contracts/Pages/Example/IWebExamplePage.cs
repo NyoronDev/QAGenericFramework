@@ -1,6 +1,6 @@
-﻿namespace UIAutomation.Contracts.Pages.Example
+﻿namespace UIAutomation.WebDriver.Contracts.Pages.Example
 {
-    public interface IExamplePage
+    public interface IWebExamplePage
     {
         void ClickExampleButton();
 

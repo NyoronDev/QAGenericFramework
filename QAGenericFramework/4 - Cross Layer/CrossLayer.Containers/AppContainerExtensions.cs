@@ -9,12 +9,18 @@ using DataFactory.RestAPI.Client;
 using DataFactory.RestAPI.Client.Contracts;
 using DataFactory.RestAPI.Client.Contracts.CustomHttpClient;
 using DataFactory.RestAPI.Client.CustomHttpClient;
-using UIAutomation.Contracts;
-using UIAutomation.Contracts.Pages;
-using UIAutomation.Contracts.Pages.Example;
-using UIAutomation.SeleniumDriver;
-using UIAutomation.SeleniumDriver.Pages;
-using UIAutomation.SeleniumDriver.Pages.Example;
+using UIAutomation.NativeDriver;
+using UIAutomation.NativeDriver.Contracts;
+using UIAutomation.NativeDriver.Contracts.Pages;
+using UIAutomation.NativeDriver.Contracts.Pages.Example;
+using UIAutomation.NativeDriver.Pages;
+using UIAutomation.NativeDriver.Pages.Example;
+using UIAutomation.WebDriver;
+using UIAutomation.WebDriver.Contracts;
+using UIAutomation.WebDriver.Contracts.Pages;
+using UIAutomation.WebDriver.Contracts.Pages.Example;
+using UIAutomation.WebDriver.Pages;
+using UIAutomation.WebDriver.Pages.Example;
 
 namespace CrossLayer.Containers
 {
@@ -45,9 +51,16 @@ namespace CrossLayer.Containers
 
         public static void RegisterWebBrowserPages(this IObjectContainer objectContainer)
         {
-            objectContainer.RegisterTypeAs<SetUpWebDriver, ISetUp>();
-            objectContainer.RegisterTypeAs<WebPageBase, IPageBase>();
-            objectContainer.RegisterTypeAs<ExamplePage, IExamplePage>();
+            objectContainer.RegisterTypeAs<SetUpWebDriver, ISetUpWebDriver>();
+            objectContainer.RegisterTypeAs<WebPageBase, IWebPageBase>();
+            objectContainer.RegisterTypeAs<WebExamplePage, IWebExamplePage>();
+        }
+
+        public static void RegisterNativePages(this IObjectContainer objectContainer)
+        {
+            objectContainer.RegisterTypeAs<SetUpNativeDriver, ISetUpNativeDriver>();
+            objectContainer.RegisterTypeAs<NativePageBase, INativePageBase>();
+            objectContainer.RegisterTypeAs<NativeExamplePage, INativeExamplePage>();
         }
     }
 }

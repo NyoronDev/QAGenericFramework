@@ -1,19 +1,19 @@
 ﻿using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
-using UIAutomation.Contracts;
-using UIAutomation.Contracts.Pages;
 using UIAutomation.Extensions;
+using UIAutomation.WebDriver.Contracts;
+using UIAutomation.WebDriver.Contracts.Pages;
 using Xunit.Abstractions;
 
-namespace UIAutomation.SeleniumDriver.Pages
+namespace UIAutomation.WebDriver.Pages
 {
-    public class WebPageBase : IPageBase
+    public class WebPageBase : IWebPageBase
     {
         protected readonly IWebDriver WebDriver;
         protected readonly ITestOutputHelper TestOutputHelper;
 
-        public WebPageBase(ISetUp setUp, ITestOutputHelper testOutputHelper)
+        public WebPageBase(ISetUpWebDriver setUp, ITestOutputHelper testOutputHelper)
         {
             WebDriver = setUp.WebDriver ?? throw new ArgumentNullException(nameof(setUp));
             TestOutputHelper = testOutputHelper ?? throw new ArgumentNullException(nameof(testOutputHelper));

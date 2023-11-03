@@ -12,6 +12,7 @@
     <None Remove="appsettings.Acceptance.json" />
     <None Remove="appsettings.Acceptance.json~RF599d76a.TMP" />
     <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
     <None Remove="appsettings.Local.json" />
   </ItemGroup>
 
@@ -20,6 +21,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="appsettings.Local.json">
@@ -33,11 +37,11 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
-    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="118.0.5993.7000" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="119.0.6045.10500" />
     <PackageReference Include="SpecFlow" Version="3.9.74" />
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" />
     <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
-    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit" Version="2.6.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -52,5 +56,9 @@
     <ProjectReference Include="..\..\3 - Data Factory\DataFactory.RestAPI.Entities\DataFactory.RestAPI.Entities.csproj" />
     <ProjectReference Include="..\..\4 - Cross Layer\CrossLayer.Containers\CrossLayer.Containers.csproj" />
     <ProjectReference Include="..\..\4 - Cross Layer\CrossLayer.Configuration\CrossLayer.Configuration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Native\" />
   </ItemGroup>
 </Project>
