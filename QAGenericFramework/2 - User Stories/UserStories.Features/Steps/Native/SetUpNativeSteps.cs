@@ -10,10 +10,12 @@ namespace UserStories.Features.Steps.Native
     public class SetUpNativeSteps : StepsBase
     {
         private readonly ISetUpNativeDriver setUpNativeDriver;
+        private readonly ScenarioContext scenarioContext;
 
-        public SetUpNativeSteps(ISetUpNativeDriver setUpNativeDriver)
+        public SetUpNativeSteps(ISetUpNativeDriver setUpNativeDriver, ScenarioContext scenarioContext)
         {
             this.setUpNativeDriver = setUpNativeDriver;
+            this.scenarioContext = scenarioContext;
         }
 
         [Given(@"The native scenario is executed with the following properties")]
