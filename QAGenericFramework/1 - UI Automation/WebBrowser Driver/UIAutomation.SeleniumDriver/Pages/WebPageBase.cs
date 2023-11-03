@@ -8,7 +8,7 @@ using Xunit.Abstractions;
 
 namespace UIAutomation.WebDriver.Pages
 {
-    public class WebPageBase : IPageBase
+    public class WebPageBase : IWebPageBase
     {
         protected readonly IWebDriver WebDriver;
         protected readonly ITestOutputHelper TestOutputHelper;

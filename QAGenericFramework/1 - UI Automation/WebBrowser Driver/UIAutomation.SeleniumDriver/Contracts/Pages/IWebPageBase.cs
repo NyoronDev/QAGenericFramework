@@ -1,6 +1,6 @@
 ﻿namespace UIAutomation.WebDriver.Contracts.Pages
 {
-    public interface IPageBase
+    public interface IWebPageBase
     {
     }
 }

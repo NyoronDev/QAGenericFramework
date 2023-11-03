@@ -60,6 +60,5 @@
 
   <ItemGroup>
     <Folder Include="Features\Native\" />
-    <Folder Include="Steps\Native\ExamplePage\" />
   </ItemGroup>
 </Project>

@@ -48,6 +48,21 @@ namespace UIAutomation.NativeDriver
             }
         }
 
+        public PlatformExecution GetPlatformExecution()
+        {
+            if (androidDriver is not null)
+            {
+                return PlatformExecution.Android;
+            }
+
+            if (iOSDriver is not null)
+            {
+                return PlatformExecution.iPhone;
+            }
+
+            throw new ApplicationException("Both Android and iPhone execution drivers are null");
+        }
+
         public void CloseAndroidDriver()
         {
             testOutputHelper.WriteLine("Removing android driver");

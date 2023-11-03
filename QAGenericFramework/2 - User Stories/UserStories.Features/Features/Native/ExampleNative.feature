@@ -9,8 +9,8 @@ Scenario Outline: The user clicks example button and obtain result from example 
     Given The native scenario is executed with the following properties
         | PlatformExecution   | Device   | PlatformVersion   |
         | <platformExecution> | <device> | <platformVersion> |
-    #When The user clicks the example button
-    #Then The user can check the text 'This is a card' from example card 'exampleCard'
+    When The user clicks the native example button
+    Then The user can check the native text 'This is a card' from example card 'exampleCard'
 
     Examples: 
         | platformExecution | device     | platformVersion |

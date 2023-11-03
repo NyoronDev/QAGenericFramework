@@ -10,6 +10,8 @@ namespace UIAutomation.NativeDriver.Contracts
 
         IOSDriver IOSDriver { get; }
 
+        PlatformExecution GetPlatformExecution();
+
         void CloseAndroidDriver();
 
         void CloseIOSDriver();

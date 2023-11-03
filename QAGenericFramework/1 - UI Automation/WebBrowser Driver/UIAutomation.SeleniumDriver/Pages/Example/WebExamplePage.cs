@@ -7,7 +7,7 @@ using Xunit.Abstractions;
 
 namespace UIAutomation.WebDriver.Pages.Example
 {
-    public class ExamplePage : WebPageBase, IExamplePage
+    public class WebExamplePage : WebPageBase, IWebExamplePage
     {
         #region .: Web Elements :.
 
@@ -17,7 +17,7 @@ namespace UIAutomation.WebDriver.Pages.Example
 
         #endregion .: Web Elements :.
 
-        public ExamplePage(ISetUpWebDriver setUp, ITestOutputHelper testOutputHelper)
+        public WebExamplePage(ISetUpWebDriver setUp, ITestOutputHelper testOutputHelper)
             : base(setUp, testOutputHelper)
         {
         }
