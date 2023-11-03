@@ -4,5 +4,6 @@
     {
         public PlatformExecution PlatformExecution { get; set; }
         public string Device { get; set; }
+        public string PlatformVersion { get; set; }
     }
 }
