@@ -44,13 +44,13 @@ BeforeSteps class is the one that pick the configuration from the json files, cr
 ### UI Automation Layer
 Layer responsible for the UI workflow, we have two different folders. Native Driver with AndroidDriver and IOSDriver to use native application workflows and WebBrowser Driver with IWebDriver to use web application workflows (you can check all the configurations allowed inside the SetUp classes). 
 
-Native platforms:
+- Native platforms:
     - OnPremise Android
     - OnPremise iOS
     - Cloud Android
     - Cloud iOS
 
-Web platforms
+- Web platforms
     - OnPremise Desktop
     - OnPremise Android
     - OnPremise iOS
@@ -63,7 +63,7 @@ For page object, you only need to make the worfklow once to run it on different 
 ### Data Factory Layer
 Layer responsible for the Backend workflow, here you can add as many folders as you need (depending your backend requirements) 
 
-Actually the framework supports
+- Actually the framework supports
     - Api (there are two different custom http clients, one directly from .Net and the other using RestSharp)
     - Database (using Dapper)
     - Performance (still using Api but including a report class to generate a json file used later in the Presentation layer to display performance results)
@@ -72,7 +72,7 @@ If more are need it (for example web services workflow) you can include it here.
 Currently for performance I recommend K6 instead of a custom performance project but I keep it if someone is interested.
 
 ### Cross Layer
-Used for common projects, here we have
+- Used for common projects, here we have
     - Configuration (appsettings json configuration to be injected later where is need it)
     - Containers (BoDi dependency injection)
     - Models (common models that can be used for create instances from Table objects or used for the UI)
