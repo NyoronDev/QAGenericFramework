@@ -1,11 +1,15 @@
 # QA Generic Framework
 Generic framework architecture to run multiple test scenarios, is n-layer based so you can remove the layers that dont use (for example, Presentation if you dont need performance or Data Factory if you dont need Rest API / Database testing)
 
-Using Specflow and BoDi dependency injection, you will be able to run the same scenario on multiple browser / devices. Scenarios are divided on Native (Android/iOS) using Appium and Web (Desktop/Android/iOS) using Selenium. For Native you only need to write one page object to cover both Android and iOS (both are AppiumElement based) and for Web with one page object you can cover Desktop, Android and iOS (all of them are using IWebDriver). If you have something specific for Android / iOS during Web tests, you can create extension methods to cast IWebDriver to AndroidDriver or iOSDriver.
+Using Specflow and BoDi dependency injection, you will be able to run the same scenario on multiple browser / devices. Scenarios are divided on Native (Android/iOS) using Appium and Web (Desktop/Android/iOS) using Selenium. 
+
+For Native you only need to write one page object to cover both Android and iOS (both are AppiumElement based) and for Web with one page object you can cover Desktop, Android and iOS (all of them are using IWebDriver). 
+
+If you have something specific for Android / iOS during Web tests, you can create extension methods to cast IWebDriver to AndroidDriver or iOSDriver.
 
 Is already prepared to run on multiple environments (different json configuration files) and you can switch between On Premise and Cloud if you have SauceLabs account
 
-The architecture already contains different templates to run the following tests:
+- The architecture already contains different templates to run the following tests:
     - Rest API
     - Database
     - Performance
